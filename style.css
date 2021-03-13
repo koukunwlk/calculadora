@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    margin: 5vw auto;
+    width: 30vw;
+    min-width: 440px;
+    min-height: 770px;
+    height: 80vh;
+    border: 1px solid black;
+    grid-template-areas:
+    'display display'
+    'numbers ops';
+}
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-area: numbers;
+    margin-left: 5px;
+}
+.ops{
+    display: grid;
+    grid-area: ops;
+    gap: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.display{
+    display: flex;
+    grid-area: display;
+    margin: 5px;
+    
+}
+.display input{
+    flex-grow: 1;
+    border: 1px solid black;
+}
