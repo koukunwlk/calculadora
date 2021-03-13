@@ -8,7 +8,7 @@
 .calculadora{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 2fr 8fr;
     margin: 5vw auto;
     width: 30vw;
     min-width: 440px;
@@ -38,8 +38,10 @@
     grid-area: display;
     margin: 5px;
     
+    
 }
 .display input{
     flex-grow: 1;
     border: 1px solid black;
+    font-size: 30px;
 }
